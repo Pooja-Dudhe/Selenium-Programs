@@ -21,6 +21,7 @@ public static void main(String[] args) throws InterruptedException {
 	WebElement link = driver.findElement(By.partialLinkText("Robotic Vacuum Cleaners"));
 	//actions.click(link).perform();
 	actions.moveToElement(link).click().perform();
+	
 }
 }
 
