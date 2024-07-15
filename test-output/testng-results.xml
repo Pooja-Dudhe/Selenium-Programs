@@ -8,25 +8,25 @@
       <![CDATA[Executing TestCase 1]]>
     </line>
   </reporter-output>
-  <suite started-at="2024-07-13T16:22:51 IST" name="Suite" finished-at="2024-07-13T16:25:57 IST" duration-ms="185974">
+  <suite started-at="2024-07-15T11:33:18 IST" name="Suite" finished-at="2024-07-15T11:34:02 IST" duration-ms="43391">
     <groups>
     </groups>
-    <test started-at="2024-07-13T16:22:51 IST" name="Test" finished-at="2024-07-13T16:25:57 IST" duration-ms="185974">
+    <test started-at="2024-07-15T11:33:18 IST" name="Test" finished-at="2024-07-15T11:34:02 IST" duration-ms="43391">
       <class name="batchExecutionClasses.R15">
-        <test-method signature="r15()[pri:0, instance:batchExecutionClasses.R15@69997e9d]" started-at="2024-07-13T16:22:51 IST" name="r15" finished-at="2024-07-13T16:24:53 IST" duration-ms="121484" status="PASS">
+        <test-method signature="r15()[pri:0, instance:batchExecutionClasses.R15@793be5ca]" started-at="2024-07-15T11:33:18 IST" name="r15" finished-at="2024-07-15T11:33:46 IST" duration-ms="27881" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- r15 -->
       </class> <!-- batchExecutionClasses.R15 -->
       <class name="batchExecutionClasses.Jawa">
-        <test-method signature="executeScript2()[pri:-5, instance:batchExecutionClasses.Jawa@7e5afaa6]" started-at="2024-07-13T16:24:53 IST" name="executeScript2" finished-at="2024-07-13T16:24:53 IST" duration-ms="5" status="PASS">
+        <test-method signature="executeScript2()[pri:-5, instance:batchExecutionClasses.Jawa@63a12c68]" started-at="2024-07-15T11:33:46 IST" name="executeScript2" finished-at="2024-07-15T11:33:46 IST" duration-ms="7" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Executing TestCase 2]]>
             </line>
           </reporter-output>
         </test-method> <!-- executeScript2 -->
-        <test-method signature="executeScript1()[pri:0, instance:batchExecutionClasses.Jawa@7e5afaa6]" started-at="2024-07-13T16:24:53 IST" name="executeScript1" finished-at="2024-07-13T16:24:53 IST" duration-ms="3" status="PASS">
+        <test-method signature="executeScript1()[pri:0, instance:batchExecutionClasses.Jawa@63a12c68]" started-at="2024-07-15T11:33:46 IST" name="executeScript1" finished-at="2024-07-15T11:33:46 IST" duration-ms="5" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Executing TestCase 1]]>
@@ -35,7 +35,7 @@
         </test-method> <!-- executeScript1 -->
       </class> <!-- batchExecutionClasses.Jawa -->
       <class name="batchExecutionClasses.Hayabusa">
-        <test-method signature="hayabusa()[pri:0, instance:batchExecutionClasses.Hayabusa@63a12c68]" started-at="2024-07-13T16:24:53 IST" name="hayabusa" finished-at="2024-07-13T16:25:57 IST" duration-ms="64392" status="PASS">
+        <test-method signature="hayabusa()[pri:0, instance:batchExecutionClasses.Hayabusa@28f3b248]" started-at="2024-07-15T11:33:46 IST" name="hayabusa" finished-at="2024-07-15T11:34:02 IST" duration-ms="15399" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- hayabusa -->
