@@ -24,7 +24,7 @@ public void harleyDavidson()
 }
 //(to run parallely use threadPoolSize along with invocationCount 0r else 
 // threadPoolSize will go in waste) 
-//if priorities are same or not given it will work alphabetically i.e. 
+//if priorities are same or not given it will work in alphabetical order
 //by default invocationCount is 1, if 0 is given it(test case) will not be considered
 
 //@Test(priority = -1, invocationCount = 3 ,threadPoolSize =3)
@@ -35,7 +35,7 @@ public void harleyDavidson()
 	//driver.quit();
 //}
 
-//if we use dependsOnMethods it will not consider priority, and will execute the method it is deprnding on 
+//if we use dependsOnMethods it will not consider priority, and will execute the method it is depending on 
 @Test(dependsOnMethods = {"harleyDavidson","r15"})
 public void bobber42()
 {
