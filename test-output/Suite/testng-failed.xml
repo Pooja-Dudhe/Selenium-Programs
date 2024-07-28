@@ -3,6 +3,12 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
+      <class name="batchExecutionClasses.Hayabusa">
+        <methods>
+          <include name="hayabusa"/>
+          <include name="harleyDavidson"/>
+        </methods>
+      </class> <!-- batchExecutionClasses.Hayabusa -->
       <class name="batchExecutionClasses.R15">
         <methods>
           <include name="r15"/>

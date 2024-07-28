@@ -1,26 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="1" total="4" passed="1" failed="1" skipped="1">
+<testng-results ignored="0" total="5" passed="2" failed="3" skipped="0">
   <reporter-output>
+    <line>
+      <![CDATA[Executing TestCase 2]]>
+    </line>
+    <line>
+      <![CDATA[Executing TestCase 1]]>
+    </line>
   </reporter-output>
-  <suite started-at="2024-07-15T12:05:48 IST" name="Default suite" finished-at="2024-07-15T12:06:08 IST" duration-ms="20170">
+  <suite started-at="2024-07-27T12:56:59 IST" name="Suite" finished-at="2024-07-27T12:57:01 IST" duration-ms="2335">
     <groups>
     </groups>
-    <test started-at="2024-07-15T12:05:48 IST" name="Default test" finished-at="2024-07-15T12:06:08 IST" duration-ms="20170">
-      <class name="TestScripts.Bikes">
-        <test-method signature="harleyDavidson()[pri:0, instance:TestScripts.Bikes@69997e9d]" started-at="2024-07-15T12:05:48 IST" name="harleyDavidson" finished-at="2024-07-15T12:06:00 IST" duration-ms="12034" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- harleyDavidson -->
-        <test-method signature="r15()[pri:0, instance:TestScripts.Bikes@69997e9d]" started-at="2024-07-15T12:06:00 IST" name="r15" finished-at="2024-07-15T12:06:08 IST" duration-ms="8008" status="FAIL">
-          <exception class="org.testng.internal.thread.ThreadTimeoutException">
+    <test started-at="2024-07-27T12:56:59 IST" name="Test" finished-at="2024-07-27T12:57:01 IST" duration-ms="2335">
+      <class name="batchExecutionClasses.R15">
+        <test-method signature="r15()[pri:0, instance:batchExecutionClasses.R15@793be5ca]" started-at="2024-07-27T12:56:59 IST" name="r15" finished-at="2024-07-27T12:57:00 IST" duration-ms="1625" status="FAIL">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
             <message>
-              <![CDATA[Method TestScripts.Bikes.r15() didn't finish within the time-out 8000]]>
+              <![CDATA[Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'USER-PC', ip: '192.168.254.1'
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], binary: C:\Users\User\.cache\seleni..., extensions: []}}]}]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.testng.internal.thread.ThreadTimeoutException: Method TestScripts.Bikes.r15() didn't finish within the time-out 8000
-at org.testng.internal.MethodInvocationHelper.invokeWithTimeoutWithNewExecutor(MethodInvocationHelper.java:384)
-at org.testng.internal.MethodInvocationHelper.invokeWithTimeout(MethodInvocationHelper.java:283)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:604)
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'USER-PC', ip: '192.168.254.1'
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], binary: C:\Users\User\.cache\seleni..., extensions: []}}]}]
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:625)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:241)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:168)
+at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:108)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:89)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:84)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:52)
+at batchExecutionClasses.R15.r15(R15.java:11)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
 at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
 at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
 at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
@@ -43,20 +66,82 @@ at org.testng.TestNG.run(TestNG.java:1031)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+Caused by: java.io.UncheckedIOException: java.io.IOException: Cannot run program "C:\Users\User\.cache\selenium\chromedriver\win64\127.0.6533.72\chromedriver.exe": CreateProcess error=193, %1 is not a valid Win32 application
+at org.openqa.selenium.os.ExternalProcess$Builder.start(ExternalProcess.java:193)
+at org.openqa.selenium.remote.service.DriverService.start(DriverService.java:208)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:119)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+... 35 more
+Caused by: java.io.IOException: Cannot run program "C:\Users\User\.cache\selenium\chromedriver\win64\127.0.6533.72\chromedriver.exe": CreateProcess error=193, %1 is not a valid Win32 application
+at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1143)
+at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1073)
+at org.openqa.selenium.os.ExternalProcess$Builder.start(ExternalProcess.java:191)
+... 38 more
+Caused by: java.io.IOException: CreateProcess error=193, %1 is not a valid Win32 application
+at java.base/java.lang.ProcessImpl.create(Native Method)
+at java.base/java.lang.ProcessImpl.<init>(ProcessImpl.java:499)
+at java.base/java.lang.ProcessImpl.start(ProcessImpl.java:158)
+at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1110)
+... 40 more
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.testng.internal.thread.ThreadTimeoutException -->
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- r15 -->
-        <test-method signature="bobber42()[pri:0, instance:TestScripts.Bikes@69997e9d]" started-at="2024-07-15T12:06:08 IST" name="bobber42" finished-at="2024-07-15T12:06:08 IST" depends-on-methods="TestScripts.Bikes.harleyDavidson, TestScripts.Bikes.r15" duration-ms="0" status="SKIP">
-          <exception class="java.lang.Throwable">
+      </class> <!-- batchExecutionClasses.R15 -->
+      <class name="batchExecutionClasses.Jawa">
+        <test-method signature="executeScript2()[pri:-5, instance:batchExecutionClasses.Jawa@63a12c68]" started-at="2024-07-27T12:57:00 IST" name="executeScript2" finished-at="2024-07-27T12:57:00 IST" duration-ms="5" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Executing TestCase 2]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- executeScript2 -->
+        <test-method signature="executeScript1()[pri:0, instance:batchExecutionClasses.Jawa@63a12c68]" started-at="2024-07-27T12:57:00 IST" name="executeScript1" finished-at="2024-07-27T12:57:00 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Executing TestCase 1]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- executeScript1 -->
+      </class> <!-- batchExecutionClasses.Jawa -->
+      <class name="batchExecutionClasses.Hayabusa">
+        <test-method signature="harleyDavidson()[pri:0, instance:batchExecutionClasses.Hayabusa@28f3b248]" started-at="2024-07-27T12:57:00 IST" name="harleyDavidson" finished-at="2024-07-27T12:57:01 IST" duration-ms="365" status="FAIL">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
             <message>
-              <![CDATA[Method Bikes.bobber42()[pri:0, instance:TestScripts.Bikes@69997e9d] depends on not successfully finished methods]]>
+              <![CDATA[Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'USER-PC', ip: '192.168.254.1'
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], binary: C:\Users\User\.cache\seleni..., extensions: []}}]}]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method Bikes.bobber42()[pri:0, instance:TestScripts.Bikes@69997e9d] depends on not successfully finished methods
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'USER-PC', ip: '192.168.254.1'
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], binary: C:\Users\User\.cache\seleni..., extensions: []}}]}]
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:625)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:241)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:168)
+at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:108)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:89)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:84)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:52)
+at batchExecutionClasses.Hayabusa.harleyDavidson(Hayabusa.java:23)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
 at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
 at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
 at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
@@ -75,13 +160,106 @@ at org.testng.TestNG.run(TestNG.java:1031)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+Caused by: java.io.UncheckedIOException: java.io.IOException: Cannot run program "C:\Users\User\.cache\selenium\chromedriver\win64\127.0.6533.72\chromedriver.exe": CreateProcess error=193, %1 is not a valid Win32 application
+at org.openqa.selenium.os.ExternalProcess$Builder.start(ExternalProcess.java:193)
+at org.openqa.selenium.remote.service.DriverService.start(DriverService.java:208)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:119)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+... 35 more
+Caused by: java.io.IOException: Cannot run program "C:\Users\User\.cache\selenium\chromedriver\win64\127.0.6533.72\chromedriver.exe": CreateProcess error=193, %1 is not a valid Win32 application
+at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1143)
+at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1073)
+at org.openqa.selenium.os.ExternalProcess$Builder.start(ExternalProcess.java:191)
+... 38 more
+Caused by: java.io.IOException: CreateProcess error=193, %1 is not a valid Win32 application
+at java.base/java.lang.ProcessImpl.create(Native Method)
+at java.base/java.lang.ProcessImpl.<init>(ProcessImpl.java:499)
+at java.base/java.lang.ProcessImpl.start(ProcessImpl.java:158)
+at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1110)
+... 40 more
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- bobber42 -->
-      </class> <!-- TestScripts.Bikes -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- harleyDavidson -->
+        <test-method signature="hayabusa()[pri:0, instance:batchExecutionClasses.Hayabusa@28f3b248]" started-at="2024-07-27T12:57:01 IST" name="hayabusa" finished-at="2024-07-27T12:57:01 IST" duration-ms="221" status="FAIL">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'USER-PC', ip: '192.168.254.1'
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], binary: C:\Users\User\.cache\seleni..., extensions: []}}]}]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'USER-PC', ip: '192.168.254.1'
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], binary: C:\Users\User\.cache\seleni..., extensions: []}}]}]
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:625)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:241)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:168)
+at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:108)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:89)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:84)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:52)
+at batchExecutionClasses.Hayabusa.hayabusa(Hayabusa.java:15)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+Caused by: java.io.UncheckedIOException: java.io.IOException: Cannot run program "C:\Users\User\.cache\selenium\chromedriver\win64\127.0.6533.72\chromedriver.exe": CreateProcess error=193, %1 is not a valid Win32 application
+at org.openqa.selenium.os.ExternalProcess$Builder.start(ExternalProcess.java:193)
+at org.openqa.selenium.remote.service.DriverService.start(DriverService.java:208)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:119)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+... 35 more
+Caused by: java.io.IOException: Cannot run program "C:\Users\User\.cache\selenium\chromedriver\win64\127.0.6533.72\chromedriver.exe": CreateProcess error=193, %1 is not a valid Win32 application
+at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1143)
+at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1073)
+at org.openqa.selenium.os.ExternalProcess$Builder.start(ExternalProcess.java:191)
+... 38 more
+Caused by: java.io.IOException: CreateProcess error=193, %1 is not a valid Win32 application
+at java.base/java.lang.ProcessImpl.create(Native Method)
+at java.base/java.lang.ProcessImpl.<init>(ProcessImpl.java:499)
+at java.base/java.lang.ProcessImpl.start(ProcessImpl.java:158)
+at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1110)
+... 40 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- hayabusa -->
+      </class> <!-- batchExecutionClasses.Hayabusa -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

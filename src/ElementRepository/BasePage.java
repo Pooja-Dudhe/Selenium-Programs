@@ -5,67 +5,71 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+/**
+ * @author renu1
+ *
+ */
 public class BasePage {
-
-@FindBy(partialLinkText="Register")
-private WebElement registerLink;
-
-@FindBy(partialLinkText="Log in")
-private WebElement loginLink;
-
-@FindBy(partialLinkText="Shopping cart")
-private WebElement shoppingCartLink;
-
-@FindBy(partialLinkText="Wishlist")
-private WebElement wishListLink;
-
-@FindBy(partialLinkText="BOOKS")
-private WebElement bookLink;
-
-@FindBy(partialLinkText="COMPUTERS")
-private WebElement computersLink;
-
-@FindBy(partialLinkText="ELECTRONICS")
-private WebElement electronicsLink;
-
-@FindBy(partialLinkText="APPAREL & SHOES")
-private WebElement apparelDownloadsAndShoesLink;
-
-@FindBy(partialLinkText="DIGITAL DOWNLOADS")
-private WebElement digitalDownloadsLink;
-
-@FindBy(partialLinkText="JEWELRY")
-private WebElement jewelryLink;
-
-@FindBy(partialLinkText="GIFT CARDS")
-private WebElement giftCardsLink;
-
-@FindBy(id="small-searchterms")
-private WebElement searchBox;
-
-@FindBy(xpath="//input[@value='Search']")
-private WebElement searchButton;
-
-/**
-	*Getters
-**/
-/**
- *this method is used to register link
- *@return WebElement
- * **/
-
-public WebElement getRegisterLink() {
+   @FindBy(partialLinkText="Register")
+   private WebElement registerLink;
+   
+   @FindBy(partialLinkText="Log in")
+   private WebElement loginLink;
+   
+   @FindBy(partialLinkText="Shopping cart")
+   private WebElement shoppingCartLink;
+   
+   @FindBy(partialLinkText="Wishlist")
+   private WebElement wishlistLink;
+   
+   @FindBy(id="small-searchterms")
+   private WebElement searchBoxLink;
+   
+   @FindBy(xpath="//input[@value='Search']")
+   private WebElement searchButtonLink;
+   
+   @FindBy(partialLinkText = "BOOKS")
+   private WebElement booksLink;
+   
+   @FindBy(partialLinkText = "COMPUTERS")
+   private WebElement computersLink;
+   
+   @FindBy(partialLinkText = "ELECTRONICS")
+   private WebElement electronicsLink;
+   
+   @FindBy(partialLinkText = "APPAREL & SHOES")
+   private WebElement appareAndShoesLink;
+   
+   @FindBy(partialLinkText = "DIGITAL DOWNLOADS")
+   private WebElement digitalDownloadslink;
+   
+   @FindBy(partialLinkText = "JEWELRY")
+   private WebElement jewelryLink;
+   
+   @FindBy(partialLinkText = "GIFT CARDS")
+   private WebElement giftCardsLink;
+   
+   @FindBy(partialLinkText = "Log out")
+   private WebElement logoutLink;
+   
+   
+   /**
+    * Getters
+    */
+   
+   /**
+    * 
+    * This is getRegisterLink method
+    * 
+    * ReturnType:webelement
+    */
+   public WebElement getRegisterLink() {
 	return registerLink;
 }
-
-
-
 
 public WebElement getLoginLink() {
 	return loginLink;
 }
-
-
 
 
 public WebElement getShoppingCartLink() {
@@ -73,20 +77,24 @@ public WebElement getShoppingCartLink() {
 }
 
 
-
-
-public WebElement getWishListLink() {
-	return wishListLink;
+public WebElement getWishlistLink() {
+	return wishlistLink;
 }
 
 
-
-
-public WebElement getBookLink() {
-	return bookLink;
+public WebElement getSearchBoxLink() {
+	return searchBoxLink;
 }
 
 
+public WebElement getSearchButtonLink() {
+	return searchButtonLink;
+}
+
+
+public WebElement getBooksLink() {
+	return booksLink;
+}
 
 
 public WebElement getComputersLink() {
@@ -94,27 +102,19 @@ public WebElement getComputersLink() {
 }
 
 
-
-
 public WebElement getElectronicsLink() {
 	return electronicsLink;
 }
 
 
-
-
-public WebElement getApparelDownloadsAndShoesLink() {
-	return apparelDownloadsAndShoesLink;
+public WebElement getAppareAndShoesLink() {
+	return appareAndShoesLink;
 }
 
 
-
-
-public WebElement getDigitalDownloadsLink() {
-	return digitalDownloadsLink;
+public WebElement getDigitalDownloadslink() {
+	return digitalDownloadslink;
 }
-
-
 
 
 public WebElement getJewelryLink() {
@@ -122,31 +122,16 @@ public WebElement getJewelryLink() {
 }
 
 
-
-
 public WebElement getGiftCardsLink() {
 	return giftCardsLink;
 }
-
-
-
-
-public WebElement getSearchBox() {
-	return searchBox;
+public WebElement getlogoutLink() {
+	return logoutLink ;
 }
-
-
-
-
-public WebElement getSearchButton() {
-	return searchButton;
-}
-
-
-
-
 public BasePage(WebDriver driver)
-{
-	PageFactory.initElements(driver,this);
-}
+	{
+		PageFactory.initElements(driver,this);	
+	}
+
+	
 }

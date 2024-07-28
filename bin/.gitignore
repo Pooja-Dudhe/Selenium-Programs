@@ -3,6 +3,7 @@
 /ElementRepository/
 /Frames/
 /GenericUtils/
+/GroupExecutionClasses/
 /JavaPrograms/
 /JavaScriptExecuter/
 /Locators/
@@ -14,4 +15,5 @@
 /WebElementMethods/
 /batchExecutionClasses/
 /com/
+/crossBrowserExecution/
 /dataDrivenTesting/

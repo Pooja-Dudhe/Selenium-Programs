@@ -3,13 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="TestScripts.Bikes">
+      <class name="crossBrowserExecution.BMW">
         <methods>
-          <include name="bobber42"/>
-          <include name="r15"/>
-          <include name="harleyDavidson"/>
+          <include name="bmw" invocation-numbers="0"/>
         </methods>
-      </class> <!-- TestScripts.Bikes -->
+      </class> <!-- crossBrowserExecution.BMW -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -6,7 +6,8 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class Bikes {
-//enabled= false means the that test case will not be considered	
+//enabled= false means that the test case will not be considered	
+//while going with TestNG we should have atleast one @Test annotation 
 @Test(enabled=false)
 public void continentalGT650() {
 	WebDriver driver=new ChromeDriver();
@@ -19,7 +20,7 @@ public void harleyDavidson()
 {
 	WebDriver driver=new ChromeDriver();
 	driver.manage().window().maximize();
-	driver.get("https://www.suzukimotorcycle.co.in/product-details/hayabusa");
+	driver.get("https://www.harley-davidson.com/in/en/index.html");
 	driver.quit();
 }
 //(to run parallely use threadPoolSize along with invocationCount 0r else 
@@ -35,7 +36,8 @@ public void harleyDavidson()
 	//driver.quit();
 //}
 
-//if we use dependsOnMethods it will not consider priority, and will execute the method it is depending on 
+//if we use dependsOnMethods it will not consider priority, and will execute the method it is depending on
+//if more than one depends on use curly braces
 @Test(dependsOnMethods = {"harleyDavidson","r15"})
 public void bobber42()
 {
