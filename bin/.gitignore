@@ -1,4 +1,8 @@
 /ActionClassMethods/
+/Locators/
+/SelectClassMethods/
+/WebDriverMethods/
+/WebElementMethods/
 /CaptureScreenshot/
 /ElementRepository/
 /Frames/
@@ -6,13 +10,9 @@
 /GroupExecutionClasses/
 /JavaPrograms/
 /JavaScriptExecuter/
-/Locators/
 /PopUps/
-/SelectClassMethods/
 /Synchronization/
 /TestScripts/
-/WebDriverMethods/
-/WebElementMethods/
 /batchExecutionClasses/
 /com/
 /crossBrowserExecution/
